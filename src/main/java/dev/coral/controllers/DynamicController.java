@@ -10,9 +10,8 @@ import io.micronaut.http.client.annotation.Client;
 import io.micronaut.scheduling.TaskExecutors;
 import io.micronaut.scheduling.annotation.ExecuteOn;
 import jakarta.inject.Inject;
+import java.io.IOException;
 import lombok.extern.slf4j.Slf4j;
-
-
 import java.util.concurrent.ThreadLocalRandom;
 
 @Slf4j
@@ -32,11 +31,15 @@ public class DynamicController {
         this.splunkO11yDataFetcherService = splunkO11yDataFetcherService;
     }
 
-    @Get("/splunk/trace/{traceId}")
-    public void getSplunkTrce(String traceId) {
-        log.info("Received request to fetch traceID: {}", traceId);
-        log.info("Serialized Trace: {}", splunkO11yDataFetcherService.getTrace(traceId));
+    @Get("/splunk/trace/{traceId}/exitspan")
+    public void getSplunkTrace(String traceId) {
+        System.out.println("Received request to fetch traceID: " + traceId);
+        System.out.println("Received Trace for service: " + splunkO11yDataFetcherService.getExistSpanFromTraceAPI(traceId));
     }
+
+    @Get("/splunk/trace/local/exitspan")
+    public void getSplunkTraceFromLocal() throws IOException {
+        System.out.println("Received Trace for service: " + splunkO11yDataFetcherService.getExistSpanFromLocalTrace());
 
     @Get("/splunk/metrics/{serviceName}")
     public void getSplunkMTS(@PathVariable("serviceName") String serviceName) {
@@ -49,9 +52,9 @@ public class DynamicController {
         log.info("===================================");
         log.info("Dynamic request: {}", dynamicEndpoint);
         EndpointConfig.Endpoint endpoint = endpointConfig.getEndpoints().stream()
-                .filter(e -> e.getUrl().equalsIgnoreCase(dynamicEndpoint))
-                .findFirst()
-                .orElseThrow(() -> new IllegalArgumentException("Endpoint not found"));
+            .filter(e -> e.getUrl().equalsIgnoreCase(dynamicEndpoint))
+            .findFirst()
+            .orElseThrow(() -> new IllegalArgumentException("Endpoint not found"));
 
         StringBuilder responseBuilder = new StringBuilder();
         for (String action : endpoint.getActions()) {

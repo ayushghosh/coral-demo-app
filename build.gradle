@@ -28,7 +28,6 @@ dependencies {
     runtimeOnly("io.goodforgod:slf4j-simple-logger:2.0.0")
     runtimeOnly("org.yaml:snakeyaml")
     implementation("io.micronaut:micronaut-jackson-databind")
-
 }
 
 
