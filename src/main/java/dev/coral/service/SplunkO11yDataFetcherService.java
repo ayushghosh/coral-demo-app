@@ -41,6 +41,7 @@ public class SplunkO11yDataFetcherService {
 
     private Span findExitSpanInTrace(List<Span> trace) {
         return trace.stream().max(Comparator.comparing(Span::getStartTime)).get();
+    }
 
     public String getMTS(String serviceName) {
         String query = MTSQueryGenerator.generateQueryForService("signalboost");

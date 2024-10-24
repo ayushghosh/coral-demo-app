@@ -40,6 +40,7 @@ public class DynamicController {
     @Get("/splunk/trace/local/exitspan")
     public void getSplunkTraceFromLocal() throws IOException {
         System.out.println("Received Trace for service: " + splunkO11yDataFetcherService.getExistSpanFromLocalTrace());
+    }
 
     @Get("/splunk/metrics/{serviceName}")
     public void getSplunkMTS(@PathVariable("serviceName") String serviceName) {
