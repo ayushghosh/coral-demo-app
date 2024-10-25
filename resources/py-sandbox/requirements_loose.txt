@@ -1,0 +1,8 @@
+# This file may be used to create an environment using:
+# conda create --name py-loose --file requirements_loose.txt -c conda-forge
+python==3.11
+dowhy
+ipykernel
+networkx
+pandas
+seaborn
