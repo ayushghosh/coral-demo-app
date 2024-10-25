@@ -1,0 +1,3577 @@
+{
+  "data": {
+    "nodes": [
+      {
+        "serviceName": "agamemnon",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "istio-ingressgateway.istio-ingress",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "metrics-processor-ingest",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "metrics-processor",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "meatballs-alpha",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "matt",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "metrics-processor.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "fullstore",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "presto.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "presto.lab0",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "analytics",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "kafka:trace_spans_firehose_shared",
+        "inferred": true,
+        "type": "pubsub"
+      },
+      {
+        "serviceName": "log-ingest.o11y-ingest",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "log-ingest",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "ingest",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "gdi-spans.o11y-apm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "gdi-spans",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "snowflake",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "signalboost",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "asynctasker",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "analytics-ephemeral",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "signalboost.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "druid-rum-coordinators",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "druid-rum-historicals",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm-sessionizer",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "s3:apm-blob-storage-lab0--signalfx-com",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "elasticsearch.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "util-svc-synthetic-load-generator-helm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "auth",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "cassandra",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "unknown_service:java",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "mongodb:MetricRulesets",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "mongodb:appsdb",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "elasticsearch:elasticsearch6-analytics",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "s3:apm-blob-storage-rc0--signalfx-com",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "gdi-events.o11y-ingest",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "trino",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "gdi-events",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "percolator",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "elasticsearch:elasticsearch6-metabase",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "logs_firehose",
+        "inferred": true,
+        "type": "pubsub"
+      },
+      {
+        "serviceName": "synthetics-api.o11y-synthetics",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "dora.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "gdi-profiling",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "profiling_logs_firehose",
+        "inferred": true,
+        "type": "pubsub"
+      },
+      {
+        "serviceName": "gdi-profiling.o11y-profiling",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "flowstream",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "postgresql:druid-metastore",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "apm-indexer-server",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "logs-processor",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "memcached",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "elasticsearch.lab1",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "rum-api.o11y-rum",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "postgresql:analyticsdb",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "meatballs-bravo",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "mongodb:authz.model.Permissions",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "druid-rum-overlords",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "druid-rum-green-overlords",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "mongodb:logsdb",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "S3",
+        "inferred": true,
+        "type": "service"
+      },
+      {
+        "serviceName": "mongodb:io.omnition.traceanalysis.util.config.mongo.MongoConfigModel",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "apm-compactor",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "metrics-usage-server",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "presto.lab1",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "rum-api",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "quantizer-alpha",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "quantizer-bravo",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "asynctasker.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "signalboost-rest",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "s3:full-fidelity-metrics-rc0--signalfx-com",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "apm-api.o11y-apm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "quantizer.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "signalboost.lab1",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm-api-peanuts",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "mongodb:flowcachestate.model.cachedjobs",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "elasticsearch:elasticsearch7-metabase",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "profiling-api",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "preview-server.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "matt-experimental",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "logs-content-manager.o11y-logs",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "flowcache-maintainer",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "meatballs.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm-streamping",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "logs-writer",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "metrics-usage-server.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "gdi-rum.o11y-rum",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "inventory-mtscreation",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "asynctasker.lab1",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "druid",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "druid.o11y-rum-druid",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "gdi-rum",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "rum_spans_firehose",
+        "inferred": true,
+        "type": "pubsub"
+      },
+      {
+        "serviceName": "sfpackage",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "rum-presto-coordinator",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "elasticsearch.o11y-sre",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "druid-rum-peons",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "druid-rum-green-peons",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "metrics-aggregator",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "s3:apm-org-config-lab0--signalfx-com",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "memcached.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "agamemnon.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "logs-processor.o11y-logs",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "druid-rum-green-coordinators",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm-api-task-runner",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "fullstore.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "flowstream.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "druid-rum-green-brokers",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "cassandra:apm",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "apm-graphql",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "ingest.Ingest",
+        "inferred": true,
+        "type": "service"
+      },
+      {
+        "serviceName": "rum-integration-tests.o11y-rum",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "druid-rum-brokers",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "druid-rum-middlemanagers",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "druid-rum-green-middlemanagers",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "druid-rum-green-historicals",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "tscreation.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "data-sprinkler.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "percolator.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "cloud-metric-syncer.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "cassandra:rum",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "gdi-rum-sr.o11y-rum",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "presto:rum",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "rum-cron-integration-tests.o11y-rum",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "trino:apm",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "signalbuddy.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "redis",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "graphql.o11y-apm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "gdi-rum-sr",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "druid.o11y-apm-druid",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "druid-rum-routers",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "druid-rum-green-routers",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "s3:apm-org-config-rc0--signalfx-com",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "elasticsearch-client.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "profiling-trace-joiner",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "irs",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "s3:metrics-usage-lab0--signalfx-com",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "metrics-usage-aggregates-calculator",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "vnode-clock.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "other_sql:trino://10.11.4.76:8081",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "snowflake.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "postgresql:hydradb",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "postgresql:appsdb",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "Glue",
+        "inferred": true,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm-indexer-api",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm-indexer-api.o11y-apm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "vnode-clock",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "logs-graphql.o11y-logs",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "sfc-server.o11y-shared",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "auth.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "sfpackage.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "profiling-trace-joiner.o11y-profiling",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm-spark-thriftserver.o11y-apm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "other_sql:trino://presto-batch-coordinator.o11y-imm:8081",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "other_sql:presto://10.11.4.76:8081",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "mongodb:authz.model.PermissionUpdateLocks",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "s3:orgs",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "apm-retention-request-writer",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "hydra",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "Indexer",
+        "inferred": true,
+        "type": "service"
+      },
+      {
+        "serviceName": "imm/SingleValueChart",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "sfc",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "echo-service",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "other_sql:snowflake://nx79760.us-east-1.snowflakecomputing.com",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "apm-compactor.o11y-apm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm-metricizer",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "rum-processor.o11y-rum",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "s3:rum-org-config-rc0--splunk-com",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "flowcache-policies",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "rum-processor",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "s3:rum-org-config-lab0--splunk-com",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "profiling-processor",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "profiling-processor.o11y-profiling",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "Sts",
+        "inferred": true,
+        "type": "service"
+      },
+      {
+        "serviceName": "rum-session-replay-processor",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "dynamodb",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "olly/FetchClient",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "rum-aggregator",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "mongodb:authz.model.PermissionsUpdateEvents",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "graphql.o11y-rum",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "inventory-store.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "SecretsManager",
+        "inferred": true,
+        "type": "service"
+      },
+      {
+        "serviceName": "domain-api-server",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "gdi-events.lab1",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "rum-graphql",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "domain-api-server.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "s3:metrics-usage-rc0--signalfx-com",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "apm-aggregator-span",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm-aggregator-trace",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "other_sql:trino://presto-coordinator-blue.o11y-imm:8081",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "olly/appModuleResourceLoader",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "olly/App",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "signalboost-backfill",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "rum-session-replay-processor.o11y-rum",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "signalboost-experimental",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "s3:rum-session-replay-lab0--splunk-com",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "kafka:rum_spans_firehose",
+        "inferred": true,
+        "type": "pubsub"
+      },
+      {
+        "serviceName": "s3",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "s3:rum-session-index-lab0--signalfx-com",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "s3:rum-session-index-rc0--signalfx-com",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "signalview/Dashboard",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "kafka:rumMetricizer",
+        "inferred": true,
+        "type": "pubsub"
+      },
+      {
+        "serviceName": "preview-server.lab1",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "postgresql:vizdb",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "kafka:rumMetrics",
+        "inferred": true,
+        "type": "pubsub"
+      },
+      {
+        "serviceName": "s3:sessionreplaydata",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "splunk-post-doc-load-resource",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/lazy_load_troubleshooting",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "s3:rum-session-replay-rc0--splunk-com",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "apm/AppLoadingBoundary",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "aggregator-logs",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "elasticsearch-client.lab1",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "postgresql:detectorsdb",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "cassandra:signalflow_packages",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "s3:accounting-data-lab0--signalfx-com",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "postgresql:navigatorsdb",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "ai-assistant.o11y-ai",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "imm/DiscoverDashboard",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "customer-server.lab1",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "imm/Navigator",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "imm/EntityHeatmapView",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "kafka:rumSessionReplay",
+        "inferred": true,
+        "type": "pubsub"
+      },
+      {
+        "serviceName": "apm/SignalflowClient",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "cingest.o11y-ingest",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "inventory-store",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "olly/LazyAppModule",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "olly/RelatedContentService",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "imm/EntityTableView",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "metrics-aggregator.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "o11y",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "muting",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "olly/SignalflowClient",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "imm/Landing",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "sfc-server.lab1",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "cingest",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "mongodb:flowcachestatedb",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "apm/LandingPageViewModel",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "kafka:rumStats",
+        "inferred": true,
+        "type": "pubsub"
+      },
+      {
+        "serviceName": "@opentelemetry/instrumentation-document-load",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "mongodb:authdb",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "rum/GraphqlClient",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "rum/LandingPage",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "olly/ApmGraphqlClient",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/apmServiceMatcher/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/apmServiceMatcher/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/apmWorkflowMatcher/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/apmWorkflowMatcher/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/gdiIntegrationMatcher/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/gdiIntegrationMatcher/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/logsConnectionMatcher/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/logsConnectionMatcher/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/logsSavedQueryMatcher/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/logsSavedQueryMatcher/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/rumApplicationMatcher/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/rumApplicationMatcher/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/syntheticsTestMatcher/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/syntheticsTestMatcher/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "o11y/GTMNewsFeed",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "@opentelemetry/instrumentation-fetch",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/LandingPageUserQuery2",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/LandingPageUserQuery2/LandingPageTable/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/LandingPageUserQuery2/LandingPageTable/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "olly-tracing/CustomInstrumentationLibrary",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/LandingPageUserQuery2/TopBusinessWorkflowsByDurationChart/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/LandingPageUserQuery2/TopBusinessWorkflowsByDurationChart/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/LandingPageUserQuery2/TopBusinessWorkflowsByErrorRateChart/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/LandingPageUserQuery2/TopBusinessWorkflowsByErrorRateChart/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/LandingPageUserQuery2/TopServicesByErrorRateChart/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/LandingPageUserQuery2/TopServicesByErrorRateChart/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/LandingPageUserQuery2/TopServicesByLatencyChart/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/LandingPageUserQuery2/TopServicesByLatencyChart/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "inventory-bulk-loader",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "product-catalog-frontend.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "aieservice",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm-sessionizer.o11y-apm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/RelatedContentClient",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/apmTraceMatcher/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/apmTraceMatcher/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/rumSessionMatcher/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/rumSessionMatcher/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/static/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "globalSearch/static/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "metrics-processor.lab1",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "LogsContentManager",
+        "inferred": true,
+        "type": "service"
+      },
+      {
+        "serviceName": "profiling-api.o11y-profiling",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "provisioning-service.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "sbingest",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "signalboost-ingest.o11y-ingest",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/ServiceMap/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/ServiceMap/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "demo-data-server",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/GraphqlClient",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/SelectionLatency/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/SelectionLatency/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/SelectionRequestsAndErrors/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/SelectionRequestsAndErrors/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "metrics.proto.processor.ConfigManager",
+        "inferred": true,
+        "type": "service"
+      },
+      {
+        "serviceName": "s3:metrics-processor-ingest-data-lab0",
+        "inferred": true,
+        "type": "database"
+      },
+      {
+        "serviceName": "apm/ServiceCentricViewUserQuery2",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/ServiceCentricViewUserQuery2/SCVOverviewDependencyChart/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/ServiceCentricViewUserQuery2/SCVOverviewDependencyChart/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/ServiceCentricViewUserQuery2/SCVOverviewErrorsChart/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/ServiceCentricViewUserQuery2/SCVOverviewErrorsChart/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/ServiceCentricViewUserQuery2/SCVOverviewLatencyChart/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/ServiceCentricViewUserQuery2/SCVOverviewLatencyChart/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/ServiceCentricViewUserQuery2/SCVOverviewRequestsChart/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/ServiceCentricViewUserQuery2/SCVOverviewRequestsChart/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/ServicesByErrorRate/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/ServicesByErrorRate/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/ServicesByLatency/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/ServicesByLatency/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/TopErrorSources/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/TopErrorSources/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/errorBoundary",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "imm/EntityServiceMapView",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "imm/ServiceMap",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "zookeeper.o11y-shared",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/DbVisibilityPageUserQuery",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/DbVisibilityPageUserQuery/DbQueryPerfDatabasesDropdown",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/DbVisibilityPageUserQuery/DbQueryPerfTopQueries",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/DbVisibilityPageUserQuery/SelectionLatency",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/DbVisibilityPageUserQuery/SelectionRequestsAndErrors",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/DbVisibilityPageUserQuery/TagSpotlightCards",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/FetchClient",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/LandingPageUserQuery2/LandingPageCharts/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/LandingPageUserQuery2/LandingPageCharts/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/NodeExemplars",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/NodeExemplarsUserQuery2",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/NodeExemplarsUserQuery2/DbQueryPerfExemplars/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/NodeExemplarsUserQuery2/DbQueryPerfExemplars/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/WorkflowDuration/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/WorkflowDuration/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/WorkflowErrorSources/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/WorkflowErrorSources/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/WorkflowRequestsAndErrors/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/WorkflowRequestsAndErrors/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/WorkflowServicesByLatency/complete",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/TroubleshootingUserQuery2/WorkflowServicesByLatency/first_data",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/lazy_load_business_workflows_configuration",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/lazy_load_db_visibility",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "apm/lazy_load_services_and_traces_configuration",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "bigdata-query.o11y-imm",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "profiling/OverviewPage",
+        "inferred": false,
+        "type": "service"
+      },
+      {
+        "serviceName": "ubuntu-shell.infra-test",
+        "inferred": false,
+        "type": "service"
+      }
+    ],
+    "edges": [
+      {
+        "fromNode": "agamemnon",
+        "toNode": "signalboost"
+      },
+      {
+        "fromNode": "analytics",
+        "toNode": "analytics"
+      },
+      {
+        "fromNode": "analytics",
+        "toNode": "elasticsearch:elasticsearch6-analytics"
+      },
+      {
+        "fromNode": "analytics",
+        "toNode": "matt"
+      },
+      {
+        "fromNode": "analytics",
+        "toNode": "memcached"
+      },
+      {
+        "fromNode": "analytics",
+        "toNode": "percolator"
+      },
+      {
+        "fromNode": "analytics",
+        "toNode": "postgresql:analyticsdb"
+      },
+      {
+        "fromNode": "analytics",
+        "toNode": "sfpackage"
+      },
+      {
+        "fromNode": "analytics",
+        "toNode": "signalboost"
+      },
+      {
+        "fromNode": "analytics",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "analytics",
+        "toNode": "unknown_service:java"
+      },
+      {
+        "fromNode": "analytics-ephemeral",
+        "toNode": "analytics-ephemeral"
+      },
+      {
+        "fromNode": "analytics-ephemeral",
+        "toNode": "elasticsearch:elasticsearch6-analytics"
+      },
+      {
+        "fromNode": "analytics-ephemeral",
+        "toNode": "matt"
+      },
+      {
+        "fromNode": "analytics-ephemeral",
+        "toNode": "memcached"
+      },
+      {
+        "fromNode": "analytics-ephemeral",
+        "toNode": "percolator"
+      },
+      {
+        "fromNode": "analytics-ephemeral",
+        "toNode": "postgresql:analyticsdb"
+      },
+      {
+        "fromNode": "analytics-ephemeral",
+        "toNode": "sfpackage"
+      },
+      {
+        "fromNode": "analytics-ephemeral",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "analytics-ephemeral",
+        "toNode": "unknown_service:java"
+      },
+      {
+        "fromNode": "apm-aggregator-span",
+        "toNode": "Sts"
+      },
+      {
+        "fromNode": "apm-aggregator-span",
+        "toNode": "s3:apm-org-config-lab0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-aggregator-span",
+        "toNode": "s3:apm-org-config-rc0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-aggregator-trace",
+        "toNode": "Sts"
+      },
+      {
+        "fromNode": "apm-aggregator-trace",
+        "toNode": "s3:apm-org-config-lab0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-aggregator-trace",
+        "toNode": "s3:apm-org-config-rc0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-api-peanuts",
+        "toNode": "Sts"
+      },
+      {
+        "fromNode": "apm-api-peanuts",
+        "toNode": "apm-api-peanuts"
+      },
+      {
+        "fromNode": "apm-api-peanuts",
+        "toNode": "apm-api.o11y-apm"
+      },
+      {
+        "fromNode": "apm-api-peanuts",
+        "toNode": "apm-indexer-api.o11y-apm"
+      },
+      {
+        "fromNode": "apm-api-peanuts",
+        "toNode": "apm-sessionizer"
+      },
+      {
+        "fromNode": "apm-api-peanuts",
+        "toNode": "cassandra"
+      },
+      {
+        "fromNode": "apm-api-peanuts",
+        "toNode": "cassandra:apm"
+      },
+      {
+        "fromNode": "apm-api-peanuts",
+        "toNode": "druid"
+      },
+      {
+        "fromNode": "apm-api-peanuts",
+        "toNode": "druid.o11y-apm-druid"
+      },
+      {
+        "fromNode": "apm-api-peanuts",
+        "toNode": "s3:apm-org-config-lab0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-api-peanuts",
+        "toNode": "s3:apm-org-config-rc0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-api-peanuts",
+        "toNode": "trino"
+      },
+      {
+        "fromNode": "apm-api-peanuts",
+        "toNode": "trino:apm"
+      },
+      {
+        "fromNode": "apm-api-task-runner",
+        "toNode": "Sts"
+      },
+      {
+        "fromNode": "apm-api-task-runner",
+        "toNode": "apm-api.o11y-apm"
+      },
+      {
+        "fromNode": "apm-api-task-runner",
+        "toNode": "cassandra"
+      },
+      {
+        "fromNode": "apm-api-task-runner",
+        "toNode": "cassandra:apm"
+      },
+      {
+        "fromNode": "apm-api-task-runner",
+        "toNode": "druid"
+      },
+      {
+        "fromNode": "apm-api-task-runner",
+        "toNode": "s3:apm-blob-storage-lab0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-api-task-runner",
+        "toNode": "s3:apm-blob-storage-rc0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-api-task-runner",
+        "toNode": "s3:apm-org-config-lab0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-api-task-runner",
+        "toNode": "s3:apm-org-config-rc0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-api-task-runner",
+        "toNode": "s3:rum-session-index-lab0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-api-task-runner",
+        "toNode": "s3:rum-session-index-rc0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-api-task-runner",
+        "toNode": "trino"
+      },
+      {
+        "fromNode": "apm-api-task-runner",
+        "toNode": "trino:apm"
+      },
+      {
+        "fromNode": "apm-api.o11y-apm",
+        "toNode": "apm-api-peanuts"
+      },
+      {
+        "fromNode": "apm-api.o11y-apm",
+        "toNode": "apm-indexer-api.o11y-apm"
+      },
+      {
+        "fromNode": "apm-api.o11y-apm",
+        "toNode": "apm-sessionizer.o11y-apm"
+      },
+      {
+        "fromNode": "apm-api.o11y-apm",
+        "toNode": "presto.lab0"
+      },
+      {
+        "fromNode": "apm-compactor",
+        "toNode": "Sts"
+      },
+      {
+        "fromNode": "apm-compactor",
+        "toNode": "apm-compactor.o11y-apm"
+      },
+      {
+        "fromNode": "apm-compactor",
+        "toNode": "cassandra"
+      },
+      {
+        "fromNode": "apm-compactor",
+        "toNode": "cassandra:apm"
+      },
+      {
+        "fromNode": "apm-compactor",
+        "toNode": "other_sql:trino://10.11.4.76:8081"
+      },
+      {
+        "fromNode": "apm-compactor",
+        "toNode": "s3:apm-blob-storage-lab0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-compactor",
+        "toNode": "s3:apm-blob-storage-rc0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-compactor",
+        "toNode": "s3:apm-org-config-lab0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-compactor",
+        "toNode": "s3:apm-org-config-rc0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-compactor",
+        "toNode": "trino"
+      },
+      {
+        "fromNode": "apm-compactor",
+        "toNode": "trino:apm"
+      },
+      {
+        "fromNode": "apm-compactor.o11y-apm",
+        "toNode": "presto.lab0"
+      },
+      {
+        "fromNode": "apm-graphql",
+        "toNode": "apm-api-peanuts"
+      },
+      {
+        "fromNode": "apm-graphql",
+        "toNode": "apm-api.o11y-apm"
+      },
+      {
+        "fromNode": "apm-graphql",
+        "toNode": "graphql.o11y-apm"
+      },
+      {
+        "fromNode": "apm-indexer-api",
+        "toNode": "Indexer"
+      },
+      {
+        "fromNode": "apm-indexer-api",
+        "toNode": "apm-indexer-server"
+      },
+      {
+        "fromNode": "apm-indexer-api.o11y-apm",
+        "toNode": "apm-indexer-api"
+      },
+      {
+        "fromNode": "apm-indexer-server",
+        "toNode": "Sts"
+      },
+      {
+        "fromNode": "apm-indexer-server",
+        "toNode": "s3:apm-blob-storage-lab0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-indexer-server",
+        "toNode": "s3:apm-blob-storage-rc0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-metricizer",
+        "toNode": "Sts"
+      },
+      {
+        "fromNode": "apm-metricizer",
+        "toNode": "s3:apm-org-config-lab0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-metricizer",
+        "toNode": "s3:apm-org-config-rc0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-retention-request-writer",
+        "toNode": "Indexer"
+      },
+      {
+        "fromNode": "apm-retention-request-writer",
+        "toNode": "apm-indexer-api.o11y-apm"
+      },
+      {
+        "fromNode": "apm-retention-request-writer",
+        "toNode": "cassandra"
+      },
+      {
+        "fromNode": "apm-retention-request-writer",
+        "toNode": "cassandra:apm"
+      },
+      {
+        "fromNode": "apm-sessionizer",
+        "toNode": "Sts"
+      },
+      {
+        "fromNode": "apm-sessionizer",
+        "toNode": "apm-sessionizer"
+      },
+      {
+        "fromNode": "apm-sessionizer",
+        "toNode": "apm-sessionizer.o11y-apm"
+      },
+      {
+        "fromNode": "apm-sessionizer",
+        "toNode": "s3:apm-blob-storage-lab0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-sessionizer",
+        "toNode": "s3:apm-blob-storage-rc0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-sessionizer",
+        "toNode": "s3:apm-org-config-lab0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-sessionizer",
+        "toNode": "s3:apm-org-config-rc0--signalfx-com"
+      },
+      {
+        "fromNode": "apm-sessionizer.o11y-apm",
+        "toNode": "apm-sessionizer"
+      },
+      {
+        "fromNode": "apm-sessionizer.o11y-apm",
+        "toNode": "apm-sessionizer.o11y-apm"
+      },
+      {
+        "fromNode": "apm-streamping",
+        "toNode": "kafka:trace_spans_firehose_shared"
+      },
+      {
+        "fromNode": "apm/DbVisibilityPageUserQuery",
+        "toNode": "apm/DbVisibilityPageUserQuery/SelectionLatency"
+      },
+      {
+        "fromNode": "apm/DbVisibilityPageUserQuery",
+        "toNode": "apm/DbVisibilityPageUserQuery/SelectionRequestsAndErrors"
+      },
+      {
+        "fromNode": "apm/DbVisibilityPageUserQuery",
+        "toNode": "apm/DbVisibilityPageUserQuery/TagSpotlightCards"
+      },
+      {
+        "fromNode": "apm/GraphqlClient",
+        "toNode": "@opentelemetry/instrumentation-fetch"
+      },
+      {
+        "fromNode": "apm/LandingPageUserQuery2",
+        "toNode": "apm/LandingPageUserQuery2/LandingPageCharts/complete"
+      },
+      {
+        "fromNode": "apm/LandingPageUserQuery2",
+        "toNode": "apm/LandingPageUserQuery2/LandingPageCharts/first_data"
+      },
+      {
+        "fromNode": "apm/LandingPageUserQuery2",
+        "toNode": "apm/LandingPageUserQuery2/LandingPageTable/complete"
+      },
+      {
+        "fromNode": "apm/LandingPageUserQuery2",
+        "toNode": "apm/LandingPageUserQuery2/LandingPageTable/first_data"
+      },
+      {
+        "fromNode": "apm/LandingPageUserQuery2",
+        "toNode": "apm/LandingPageUserQuery2/TopBusinessWorkflowsByDurationChart/complete"
+      },
+      {
+        "fromNode": "apm/LandingPageUserQuery2",
+        "toNode": "apm/LandingPageUserQuery2/TopBusinessWorkflowsByDurationChart/first_data"
+      },
+      {
+        "fromNode": "apm/LandingPageUserQuery2",
+        "toNode": "apm/LandingPageUserQuery2/TopBusinessWorkflowsByErrorRateChart/complete"
+      },
+      {
+        "fromNode": "apm/LandingPageUserQuery2",
+        "toNode": "apm/LandingPageUserQuery2/TopBusinessWorkflowsByErrorRateChart/first_data"
+      },
+      {
+        "fromNode": "apm/LandingPageUserQuery2",
+        "toNode": "apm/LandingPageUserQuery2/TopServicesByErrorRateChart/complete"
+      },
+      {
+        "fromNode": "apm/LandingPageUserQuery2",
+        "toNode": "apm/LandingPageUserQuery2/TopServicesByErrorRateChart/first_data"
+      },
+      {
+        "fromNode": "apm/LandingPageUserQuery2",
+        "toNode": "apm/LandingPageUserQuery2/TopServicesByLatencyChart/complete"
+      },
+      {
+        "fromNode": "apm/LandingPageUserQuery2",
+        "toNode": "apm/LandingPageUserQuery2/TopServicesByLatencyChart/first_data"
+      },
+      {
+        "fromNode": "apm/LandingPageViewModel",
+        "toNode": "apm/SignalflowClient"
+      },
+      {
+        "fromNode": "apm/NodeExemplars",
+        "toNode": "apm/GraphqlClient"
+      },
+      {
+        "fromNode": "apm/NodeExemplarsUserQuery2",
+        "toNode": "apm/NodeExemplarsUserQuery2/DbQueryPerfExemplars/complete"
+      },
+      {
+        "fromNode": "apm/NodeExemplarsUserQuery2",
+        "toNode": "apm/NodeExemplarsUserQuery2/DbQueryPerfExemplars/first_data"
+      },
+      {
+        "fromNode": "apm/ServiceCentricViewUserQuery2",
+        "toNode": "apm/ServiceCentricViewUserQuery2/SCVOverviewDependencyChart/complete"
+      },
+      {
+        "fromNode": "apm/ServiceCentricViewUserQuery2",
+        "toNode": "apm/ServiceCentricViewUserQuery2/SCVOverviewDependencyChart/first_data"
+      },
+      {
+        "fromNode": "apm/ServiceCentricViewUserQuery2",
+        "toNode": "apm/ServiceCentricViewUserQuery2/SCVOverviewErrorsChart/complete"
+      },
+      {
+        "fromNode": "apm/ServiceCentricViewUserQuery2",
+        "toNode": "apm/ServiceCentricViewUserQuery2/SCVOverviewErrorsChart/first_data"
+      },
+      {
+        "fromNode": "apm/ServiceCentricViewUserQuery2",
+        "toNode": "apm/ServiceCentricViewUserQuery2/SCVOverviewLatencyChart/complete"
+      },
+      {
+        "fromNode": "apm/ServiceCentricViewUserQuery2",
+        "toNode": "apm/ServiceCentricViewUserQuery2/SCVOverviewLatencyChart/first_data"
+      },
+      {
+        "fromNode": "apm/ServiceCentricViewUserQuery2",
+        "toNode": "apm/ServiceCentricViewUserQuery2/SCVOverviewRequestsChart/complete"
+      },
+      {
+        "fromNode": "apm/ServiceCentricViewUserQuery2",
+        "toNode": "apm/ServiceCentricViewUserQuery2/SCVOverviewRequestsChart/first_data"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/SelectionLatency/complete"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/SelectionLatency/first_data"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/SelectionRequestsAndErrors/complete"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/SelectionRequestsAndErrors/first_data"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/ServiceMap/complete"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/ServiceMap/first_data"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/ServicesByErrorRate/complete"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/ServicesByErrorRate/first_data"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/ServicesByLatency/complete"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/ServicesByLatency/first_data"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/TopErrorSources/complete"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/TopErrorSources/first_data"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/WorkflowDuration/complete"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/WorkflowDuration/first_data"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/WorkflowErrorSources/complete"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/WorkflowErrorSources/first_data"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/WorkflowRequestsAndErrors/complete"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/WorkflowRequestsAndErrors/first_data"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/WorkflowServicesByLatency/complete"
+      },
+      {
+        "fromNode": "apm/TroubleshootingUserQuery2",
+        "toNode": "apm/TroubleshootingUserQuery2/WorkflowServicesByLatency/first_data"
+      },
+      {
+        "fromNode": "asynctasker",
+        "toNode": "LogsContentManager"
+      },
+      {
+        "fromNode": "asynctasker",
+        "toNode": "analytics"
+      },
+      {
+        "fromNode": "asynctasker",
+        "toNode": "analytics-ephemeral"
+      },
+      {
+        "fromNode": "asynctasker",
+        "toNode": "apm-api-peanuts"
+      },
+      {
+        "fromNode": "asynctasker",
+        "toNode": "asynctasker.lab1"
+      },
+      {
+        "fromNode": "asynctasker",
+        "toNode": "auth"
+      },
+      {
+        "fromNode": "asynctasker",
+        "toNode": "cassandra"
+      },
+      {
+        "fromNode": "asynctasker",
+        "toNode": "logs-content-manager.o11y-logs"
+      },
+      {
+        "fromNode": "asynctasker",
+        "toNode": "matt"
+      },
+      {
+        "fromNode": "asynctasker",
+        "toNode": "metrics-processor"
+      },
+      {
+        "fromNode": "asynctasker",
+        "toNode": "metrics-processor.lab1"
+      },
+      {
+        "fromNode": "asynctasker",
+        "toNode": "signalboost"
+      },
+      {
+        "fromNode": "asynctasker",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "asynctasker.o11y-imm",
+        "toNode": "apm-api-peanuts"
+      },
+      {
+        "fromNode": "asynctasker.o11y-imm",
+        "toNode": "apm-api.o11y-apm"
+      },
+      {
+        "fromNode": "asynctasker.o11y-imm",
+        "toNode": "elasticsearch.o11y-imm"
+      },
+      {
+        "fromNode": "asynctasker.o11y-imm",
+        "toNode": "logs-content-manager.o11y-logs"
+      },
+      {
+        "fromNode": "asynctasker.o11y-imm",
+        "toNode": "metrics-processor.o11y-imm"
+      },
+      {
+        "fromNode": "asynctasker.o11y-imm",
+        "toNode": "rum-api.o11y-rum"
+      },
+      {
+        "fromNode": "asynctasker.o11y-imm",
+        "toNode": "signalbuddy.o11y-imm"
+      },
+      {
+        "fromNode": "auth",
+        "toNode": "cassandra"
+      },
+      {
+        "fromNode": "auth",
+        "toNode": "mongodb:authdb"
+      },
+      {
+        "fromNode": "auth",
+        "toNode": "mongodb:authz.model.PermissionUpdateLocks"
+      },
+      {
+        "fromNode": "auth",
+        "toNode": "mongodb:authz.model.Permissions"
+      },
+      {
+        "fromNode": "auth",
+        "toNode": "mongodb:authz.model.PermissionsUpdateEvents"
+      },
+      {
+        "fromNode": "auth",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "cingest.o11y-ingest",
+        "toNode": "cingest"
+      },
+      {
+        "fromNode": "demo-data-server",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "domain-api-server.o11y-imm",
+        "toNode": "domain-api-server"
+      },
+      {
+        "fromNode": "dora.o11y-imm",
+        "toNode": "metrics-processor.o11y-imm"
+      },
+      {
+        "fromNode": "dora.o11y-imm",
+        "toNode": "presto.o11y-imm"
+      },
+      {
+        "fromNode": "druid-rum-brokers",
+        "toNode": "druid-rum-historicals"
+      },
+      {
+        "fromNode": "druid-rum-brokers",
+        "toNode": "druid-rum-peons"
+      },
+      {
+        "fromNode": "druid-rum-coordinators",
+        "toNode": "druid-rum-historicals"
+      },
+      {
+        "fromNode": "druid-rum-coordinators",
+        "toNode": "druid-rum-overlords"
+      },
+      {
+        "fromNode": "druid-rum-coordinators",
+        "toNode": "druid-rum-peons"
+      },
+      {
+        "fromNode": "druid-rum-coordinators",
+        "toNode": "postgresql:druid-metastore"
+      },
+      {
+        "fromNode": "druid-rum-green-brokers",
+        "toNode": "druid.o11y-rum-druid"
+      },
+      {
+        "fromNode": "druid-rum-green-coordinators",
+        "toNode": "druid.o11y-rum-druid"
+      },
+      {
+        "fromNode": "druid-rum-green-coordinators",
+        "toNode": "postgresql:druid-metastore"
+      },
+      {
+        "fromNode": "druid-rum-green-middlemanagers",
+        "toNode": "druid.o11y-rum-druid"
+      },
+      {
+        "fromNode": "druid-rum-green-overlords",
+        "toNode": "druid.o11y-rum-druid"
+      },
+      {
+        "fromNode": "druid-rum-green-overlords",
+        "toNode": "postgresql:druid-metastore"
+      },
+      {
+        "fromNode": "druid-rum-green-peons",
+        "toNode": "druid-rum-green-middlemanagers"
+      },
+      {
+        "fromNode": "druid-rum-green-peons",
+        "toNode": "druid.o11y-rum-druid"
+      },
+      {
+        "fromNode": "druid-rum-green-routers",
+        "toNode": "druid.o11y-rum-druid"
+      },
+      {
+        "fromNode": "druid-rum-middlemanagers",
+        "toNode": "druid-rum-overlords"
+      },
+      {
+        "fromNode": "druid-rum-overlords",
+        "toNode": "druid-rum-middlemanagers"
+      },
+      {
+        "fromNode": "druid-rum-overlords",
+        "toNode": "druid-rum-peons"
+      },
+      {
+        "fromNode": "druid-rum-overlords",
+        "toNode": "postgresql:druid-metastore"
+      },
+      {
+        "fromNode": "druid-rum-peons",
+        "toNode": "druid-rum-coordinators"
+      },
+      {
+        "fromNode": "druid-rum-peons",
+        "toNode": "druid-rum-overlords"
+      },
+      {
+        "fromNode": "druid-rum-routers",
+        "toNode": "druid-rum-coordinators"
+      },
+      {
+        "fromNode": "druid.o11y-rum-druid",
+        "toNode": "druid-rum-green-brokers"
+      },
+      {
+        "fromNode": "druid.o11y-rum-druid",
+        "toNode": "druid-rum-green-coordinators"
+      },
+      {
+        "fromNode": "druid.o11y-rum-druid",
+        "toNode": "druid-rum-green-historicals"
+      },
+      {
+        "fromNode": "druid.o11y-rum-druid",
+        "toNode": "druid-rum-green-middlemanagers"
+      },
+      {
+        "fromNode": "druid.o11y-rum-druid",
+        "toNode": "druid-rum-green-overlords"
+      },
+      {
+        "fromNode": "druid.o11y-rum-druid",
+        "toNode": "druid-rum-green-peons"
+      },
+      {
+        "fromNode": "flowcache-maintainer",
+        "toNode": "analytics"
+      },
+      {
+        "fromNode": "flowcache-maintainer",
+        "toNode": "analytics-ephemeral"
+      },
+      {
+        "fromNode": "flowcache-maintainer",
+        "toNode": "mongodb:flowcachestate.model.cachedjobs"
+      },
+      {
+        "fromNode": "flowcache-maintainer",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "flowcache-policies",
+        "toNode": "flowcache-maintainer"
+      },
+      {
+        "fromNode": "flowcache-policies",
+        "toNode": "mongodb:flowcachestate.model.cachedjobs"
+      },
+      {
+        "fromNode": "flowcache-policies",
+        "toNode": "mongodb:flowcachestatedb"
+      },
+      {
+        "fromNode": "flowstream",
+        "toNode": "analytics"
+      },
+      {
+        "fromNode": "flowstream",
+        "toNode": "analytics-ephemeral"
+      },
+      {
+        "fromNode": "flowstream",
+        "toNode": "auth"
+      },
+      {
+        "fromNode": "flowstream",
+        "toNode": "cassandra"
+      },
+      {
+        "fromNode": "flowstream",
+        "toNode": "flowcache-maintainer"
+      },
+      {
+        "fromNode": "flowstream",
+        "toNode": "mongodb:flowcachestate.model.cachedjobs"
+      },
+      {
+        "fromNode": "flowstream",
+        "toNode": "mongodb:flowcachestatedb"
+      },
+      {
+        "fromNode": "flowstream",
+        "toNode": "postgresql:appsdb"
+      },
+      {
+        "fromNode": "flowstream",
+        "toNode": "postgresql:vizdb"
+      },
+      {
+        "fromNode": "flowstream",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "flowstream.o11y-imm",
+        "toNode": "flowstream"
+      },
+      {
+        "fromNode": "fullstore",
+        "toNode": "Glue"
+      },
+      {
+        "fromNode": "fullstore",
+        "toNode": "S3"
+      },
+      {
+        "fromNode": "fullstore",
+        "toNode": "Sts"
+      },
+      {
+        "fromNode": "fullstore",
+        "toNode": "cassandra"
+      },
+      {
+        "fromNode": "fullstore",
+        "toNode": "dynamodb"
+      },
+      {
+        "fromNode": "fullstore",
+        "toNode": "s3:full-fidelity-metrics-rc0--signalfx-com"
+      },
+      {
+        "fromNode": "fullstore",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "gdi-events.lab1",
+        "toNode": "ingest"
+      },
+      {
+        "fromNode": "gdi-events.o11y-ingest",
+        "toNode": "ingest"
+      },
+      {
+        "fromNode": "gdi-profiling",
+        "toNode": "profiling_logs_firehose"
+      },
+      {
+        "fromNode": "gdi-profiling.o11y-profiling",
+        "toNode": "ingest"
+      },
+      {
+        "fromNode": "gdi-rum",
+        "toNode": "rum_spans_firehose"
+      },
+      {
+        "fromNode": "gdi-rum-sr",
+        "toNode": "redis"
+      },
+      {
+        "fromNode": "gdi-rum-sr.o11y-rum",
+        "toNode": "ingest"
+      },
+      {
+        "fromNode": "gdi-rum.o11y-rum",
+        "toNode": "ingest"
+      },
+      {
+        "fromNode": "gdi-spans",
+        "toNode": "kafka:trace_spans_firehose_shared"
+      },
+      {
+        "fromNode": "gdi-spans.o11y-apm",
+        "toNode": "ingest"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/apmServiceMatcher/complete"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/apmServiceMatcher/first_data"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/apmTraceMatcher/complete"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/apmTraceMatcher/first_data"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/apmWorkflowMatcher/complete"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/apmWorkflowMatcher/first_data"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/gdiIntegrationMatcher/complete"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/gdiIntegrationMatcher/first_data"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/logsConnectionMatcher/complete"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/logsConnectionMatcher/first_data"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/logsSavedQueryMatcher/complete"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/logsSavedQueryMatcher/first_data"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/rumApplicationMatcher/complete"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/rumApplicationMatcher/first_data"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/rumSessionMatcher/complete"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/rumSessionMatcher/first_data"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/static/complete"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/static/first_data"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/syntheticsTestMatcher/complete"
+      },
+      {
+        "fromNode": "globalSearch",
+        "toNode": "globalSearch/syntheticsTestMatcher/first_data"
+      },
+      {
+        "fromNode": "graphql.o11y-apm",
+        "toNode": "apm-graphql"
+      },
+      {
+        "fromNode": "graphql.o11y-rum",
+        "toNode": "rum-graphql"
+      },
+      {
+        "fromNode": "hydra",
+        "toNode": "postgresql:hydradb"
+      },
+      {
+        "fromNode": "imm/DiscoverDashboard",
+        "toNode": "olly/FetchClient"
+      },
+      {
+        "fromNode": "imm/DiscoverDashboard",
+        "toNode": "signalview/Dashboard"
+      },
+      {
+        "fromNode": "imm/EntityServiceMapView",
+        "toNode": "imm/ServiceMap"
+      },
+      {
+        "fromNode": "imm/Landing",
+        "toNode": "imm/SingleValueChart"
+      },
+      {
+        "fromNode": "imm/Landing",
+        "toNode": "olly/FetchClient"
+      },
+      {
+        "fromNode": "imm/Navigator",
+        "toNode": "imm/DiscoverDashboard"
+      },
+      {
+        "fromNode": "imm/Navigator",
+        "toNode": "imm/EntityHeatmapView"
+      },
+      {
+        "fromNode": "imm/Navigator",
+        "toNode": "imm/EntityTableView"
+      },
+      {
+        "fromNode": "ingest",
+        "toNode": "gdi-events"
+      },
+      {
+        "fromNode": "ingest",
+        "toNode": "gdi-profiling"
+      },
+      {
+        "fromNode": "ingest",
+        "toNode": "gdi-rum"
+      },
+      {
+        "fromNode": "ingest",
+        "toNode": "gdi-rum-sr"
+      },
+      {
+        "fromNode": "ingest",
+        "toNode": "gdi-spans"
+      },
+      {
+        "fromNode": "ingest",
+        "toNode": "ingest.Ingest"
+      },
+      {
+        "fromNode": "irs",
+        "toNode": "signalboost"
+      },
+      {
+        "fromNode": "irs",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "istio-ingressgateway.istio-ingress",
+        "toNode": "cingest.o11y-ingest"
+      },
+      {
+        "fromNode": "istio-ingressgateway.istio-ingress",
+        "toNode": "flowstream.o11y-imm"
+      },
+      {
+        "fromNode": "istio-ingressgateway.istio-ingress",
+        "toNode": "gdi-events.o11y-ingest"
+      },
+      {
+        "fromNode": "istio-ingressgateway.istio-ingress",
+        "toNode": "gdi-profiling.o11y-profiling"
+      },
+      {
+        "fromNode": "istio-ingressgateway.istio-ingress",
+        "toNode": "gdi-rum-sr.o11y-rum"
+      },
+      {
+        "fromNode": "istio-ingressgateway.istio-ingress",
+        "toNode": "gdi-rum.o11y-rum"
+      },
+      {
+        "fromNode": "istio-ingressgateway.istio-ingress",
+        "toNode": "gdi-spans.o11y-apm"
+      },
+      {
+        "fromNode": "istio-ingressgateway.istio-ingress",
+        "toNode": "log-ingest.o11y-ingest"
+      },
+      {
+        "fromNode": "istio-ingressgateway.istio-ingress",
+        "toNode": "metrics-processor-ingest"
+      },
+      {
+        "fromNode": "istio-ingressgateway.istio-ingress",
+        "toNode": "metrics-processor.o11y-imm"
+      },
+      {
+        "fromNode": "istio-ingressgateway.istio-ingress",
+        "toNode": "preview-server.o11y-imm"
+      },
+      {
+        "fromNode": "istio-ingressgateway.istio-ingress",
+        "toNode": "product-catalog-frontend.o11y-imm"
+      },
+      {
+        "fromNode": "istio-ingressgateway.istio-ingress",
+        "toNode": "provisioning-service.o11y-imm"
+      },
+      {
+        "fromNode": "istio-ingressgateway.istio-ingress",
+        "toNode": "sfc-server.o11y-shared"
+      },
+      {
+        "fromNode": "istio-ingressgateway.istio-ingress",
+        "toNode": "signalboost"
+      },
+      {
+        "fromNode": "istio-ingressgateway.istio-ingress",
+        "toNode": "signalboost.o11y-imm"
+      },
+      {
+        "fromNode": "istio-ingressgateway.istio-ingress",
+        "toNode": "synthetics-api.o11y-synthetics"
+      },
+      {
+        "fromNode": "kafka:rumSessionReplay",
+        "toNode": "rum-session-replay-processor"
+      },
+      {
+        "fromNode": "kafka:rum_spans_firehose",
+        "toNode": "rum-processor"
+      },
+      {
+        "fromNode": "log-ingest",
+        "toNode": "logs_firehose"
+      },
+      {
+        "fromNode": "log-ingest.o11y-ingest",
+        "toNode": "log-ingest"
+      },
+      {
+        "fromNode": "logs-processor",
+        "toNode": "SecretsManager"
+      },
+      {
+        "fromNode": "logs-processor",
+        "toNode": "auth"
+      },
+      {
+        "fromNode": "logs-processor",
+        "toNode": "mongodb:io.omnition.traceanalysis.util.config.mongo.MongoConfigModel"
+      },
+      {
+        "fromNode": "logs-processor",
+        "toNode": "mongodb:logsdb"
+      },
+      {
+        "fromNode": "logs-writer",
+        "toNode": "SecretsManager"
+      },
+      {
+        "fromNode": "matt",
+        "toNode": "elasticsearch:elasticsearch6-metabase"
+      },
+      {
+        "fromNode": "matt",
+        "toNode": "elasticsearch:elasticsearch7-metabase"
+      },
+      {
+        "fromNode": "matt",
+        "toNode": "meatballs-alpha"
+      },
+      {
+        "fromNode": "matt",
+        "toNode": "meatballs-bravo"
+      },
+      {
+        "fromNode": "matt-experimental",
+        "toNode": "meatballs-alpha"
+      },
+      {
+        "fromNode": "meatballs-alpha",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "meatballs-bravo",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "metrics-aggregator",
+        "toNode": "metrics-aggregator.o11y-imm"
+      },
+      {
+        "fromNode": "metrics-aggregator",
+        "toNode": "metrics-processor-ingest"
+      },
+      {
+        "fromNode": "metrics-aggregator",
+        "toNode": "metrics-processor.o11y-imm"
+      },
+      {
+        "fromNode": "metrics-aggregator.o11y-imm",
+        "toNode": "metrics-processor.o11y-imm"
+      },
+      {
+        "fromNode": "metrics-processor",
+        "toNode": "Sts"
+      },
+      {
+        "fromNode": "metrics-processor",
+        "toNode": "mongodb:MetricRulesets"
+      },
+      {
+        "fromNode": "metrics-processor",
+        "toNode": "mongodb:appsdb"
+      },
+      {
+        "fromNode": "metrics-processor",
+        "toNode": "s3:metrics-processor-ingest-data-lab0"
+      },
+      {
+        "fromNode": "metrics-processor",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "metrics-processor-ingest",
+        "toNode": "ingest.Ingest"
+      },
+      {
+        "fromNode": "metrics-processor-ingest",
+        "toNode": "metrics-processor"
+      },
+      {
+        "fromNode": "metrics-processor.o11y-imm",
+        "toNode": "metrics-processor"
+      },
+      {
+        "fromNode": "metrics-processor.o11y-imm",
+        "toNode": "metrics-processor-ingest"
+      },
+      {
+        "fromNode": "metrics-usage-aggregates-calculator",
+        "toNode": "other_sql:trino://presto-batch-coordinator.o11y-imm:8081"
+      },
+      {
+        "fromNode": "metrics-usage-server",
+        "toNode": "Glue"
+      },
+      {
+        "fromNode": "metrics-usage-server",
+        "toNode": "Sts"
+      },
+      {
+        "fromNode": "metrics-usage-server",
+        "toNode": "dynamodb"
+      },
+      {
+        "fromNode": "metrics-usage-server",
+        "toNode": "other_sql:snowflake://nx79760.us-east-1.snowflakecomputing.com"
+      },
+      {
+        "fromNode": "metrics-usage-server",
+        "toNode": "other_sql:trino://presto-batch-coordinator.o11y-imm:8081"
+      },
+      {
+        "fromNode": "metrics-usage-server",
+        "toNode": "other_sql:trino://presto-coordinator-blue.o11y-imm:8081"
+      },
+      {
+        "fromNode": "metrics-usage-server",
+        "toNode": "s3:metrics-usage-lab0--signalfx-com"
+      },
+      {
+        "fromNode": "metrics-usage-server",
+        "toNode": "s3:metrics-usage-rc0--signalfx-com"
+      },
+      {
+        "fromNode": "metrics-usage-server",
+        "toNode": "signalboost"
+      },
+      {
+        "fromNode": "metrics-usage-server.o11y-imm",
+        "toNode": "metrics-usage-server"
+      },
+      {
+        "fromNode": "metrics-usage-server.o11y-imm",
+        "toNode": "presto.o11y-imm"
+      },
+      {
+        "fromNode": "muting",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "olly/ApmGraphqlClient",
+        "toNode": "@opentelemetry/instrumentation-fetch"
+      },
+      {
+        "fromNode": "olly/App",
+        "toNode": "@opentelemetry/instrumentation-document-load"
+      },
+      {
+        "fromNode": "olly/FetchClient",
+        "toNode": "@opentelemetry/instrumentation-fetch"
+      },
+      {
+        "fromNode": "olly/LazyAppModule",
+        "toNode": "apm/AppLoadingBoundary"
+      },
+      {
+        "fromNode": "olly/LazyAppModule",
+        "toNode": "olly/appModuleResourceLoader"
+      },
+      {
+        "fromNode": "olly/RelatedContentService",
+        "toNode": "olly/ApmGraphqlClient"
+      },
+      {
+        "fromNode": "olly/RelatedContentService",
+        "toNode": "olly/FetchClient"
+      },
+      {
+        "fromNode": "olly/RelatedContentService",
+        "toNode": "olly/SignalflowClient"
+      },
+      {
+        "fromNode": "olly/appModuleResourceLoader",
+        "toNode": "splunk-post-doc-load-resource"
+      },
+      {
+        "fromNode": "percolator",
+        "toNode": "cassandra"
+      },
+      {
+        "fromNode": "percolator",
+        "toNode": "matt"
+      },
+      {
+        "fromNode": "percolator",
+        "toNode": "matt-experimental"
+      },
+      {
+        "fromNode": "percolator",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "presto.lab0",
+        "toNode": "presto.lab0"
+      },
+      {
+        "fromNode": "presto.o11y-imm",
+        "toNode": "presto.o11y-imm"
+      },
+      {
+        "fromNode": "profiling-processor.o11y-profiling",
+        "toNode": "profiling-trace-joiner.o11y-profiling"
+      },
+      {
+        "fromNode": "profiling-trace-joiner",
+        "toNode": "Indexer"
+      },
+      {
+        "fromNode": "profiling-trace-joiner",
+        "toNode": "Sts"
+      },
+      {
+        "fromNode": "profiling-trace-joiner",
+        "toNode": "s3:apm-blob-storage-lab0--signalfx-com"
+      },
+      {
+        "fromNode": "profiling-trace-joiner.o11y-profiling",
+        "toNode": "apm-indexer-api.o11y-apm"
+      },
+      {
+        "fromNode": "quantizer-alpha",
+        "toNode": "matt"
+      },
+      {
+        "fromNode": "quantizer-alpha",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "quantizer-bravo",
+        "toNode": "matt"
+      },
+      {
+        "fromNode": "quantizer-bravo",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "rum-api",
+        "toNode": "Sts"
+      },
+      {
+        "fromNode": "rum-api",
+        "toNode": "cassandra"
+      },
+      {
+        "fromNode": "rum-api",
+        "toNode": "cassandra:rum"
+      },
+      {
+        "fromNode": "rum-api",
+        "toNode": "druid.o11y-rum-druid"
+      },
+      {
+        "fromNode": "rum-api",
+        "toNode": "other_sql:presto://10.11.4.76:8081"
+      },
+      {
+        "fromNode": "rum-api",
+        "toNode": "presto:rum"
+      },
+      {
+        "fromNode": "rum-api",
+        "toNode": "rum-api"
+      },
+      {
+        "fromNode": "rum-api",
+        "toNode": "rum-presto-coordinator"
+      },
+      {
+        "fromNode": "rum-api",
+        "toNode": "s3"
+      },
+      {
+        "fromNode": "rum-api",
+        "toNode": "s3:orgs"
+      },
+      {
+        "fromNode": "rum-api",
+        "toNode": "s3:rum-org-config-lab0--splunk-com"
+      },
+      {
+        "fromNode": "rum-api",
+        "toNode": "s3:rum-org-config-rc0--splunk-com"
+      },
+      {
+        "fromNode": "rum-api",
+        "toNode": "s3:rum-session-replay-lab0--splunk-com"
+      },
+      {
+        "fromNode": "rum-api",
+        "toNode": "s3:rum-session-replay-rc0--splunk-com"
+      },
+      {
+        "fromNode": "rum-api",
+        "toNode": "s3:sessionreplaydata"
+      },
+      {
+        "fromNode": "rum-api.o11y-rum",
+        "toNode": "rum-api"
+      },
+      {
+        "fromNode": "rum-cron-integration-tests.o11y-rum",
+        "toNode": "rum-api.o11y-rum"
+      },
+      {
+        "fromNode": "rum-cron-integration-tests.o11y-rum",
+        "toNode": "rum-processor.o11y-rum"
+      },
+      {
+        "fromNode": "rum-graphql",
+        "toNode": "apm-api-peanuts"
+      },
+      {
+        "fromNode": "rum-graphql",
+        "toNode": "graphql.o11y-rum"
+      },
+      {
+        "fromNode": "rum-graphql",
+        "toNode": "rum-api"
+      },
+      {
+        "fromNode": "rum-graphql",
+        "toNode": "rum-api.o11y-rum"
+      },
+      {
+        "fromNode": "rum-integration-tests.o11y-rum",
+        "toNode": "rum-api.o11y-rum"
+      },
+      {
+        "fromNode": "rum-integration-tests.o11y-rum",
+        "toNode": "rum-processor.o11y-rum"
+      },
+      {
+        "fromNode": "rum-integration-tests.o11y-rum",
+        "toNode": "rum-session-replay-processor.o11y-rum"
+      },
+      {
+        "fromNode": "rum-processor",
+        "toNode": "cassandra:rum"
+      },
+      {
+        "fromNode": "rum-processor",
+        "toNode": "kafka:rumMetricizer"
+      },
+      {
+        "fromNode": "rum-processor",
+        "toNode": "kafka:rumMetrics"
+      },
+      {
+        "fromNode": "rum-processor",
+        "toNode": "kafka:rumStats"
+      },
+      {
+        "fromNode": "rum-processor",
+        "toNode": "kafka:rum_spans_firehose"
+      },
+      {
+        "fromNode": "rum-processor",
+        "toNode": "s3"
+      },
+      {
+        "fromNode": "rum-processor",
+        "toNode": "s3:orgs"
+      },
+      {
+        "fromNode": "rum-processor",
+        "toNode": "s3:rum-org-config-lab0--splunk-com"
+      },
+      {
+        "fromNode": "rum-processor",
+        "toNode": "s3:rum-org-config-rc0--splunk-com"
+      },
+      {
+        "fromNode": "rum-processor.o11y-rum",
+        "toNode": "rum-processor"
+      },
+      {
+        "fromNode": "rum-session-replay-processor",
+        "toNode": "kafka:rumSessionReplay"
+      },
+      {
+        "fromNode": "rum-session-replay-processor",
+        "toNode": "s3"
+      },
+      {
+        "fromNode": "rum-session-replay-processor",
+        "toNode": "s3:rum-session-replay-lab0--splunk-com"
+      },
+      {
+        "fromNode": "rum-session-replay-processor",
+        "toNode": "s3:rum-session-replay-rc0--splunk-com"
+      },
+      {
+        "fromNode": "rum-session-replay-processor",
+        "toNode": "s3:sessionreplaydata"
+      },
+      {
+        "fromNode": "rum-session-replay-processor.o11y-rum",
+        "toNode": "rum-session-replay-processor"
+      },
+      {
+        "fromNode": "rum/LandingPage",
+        "toNode": "rum/GraphqlClient"
+      },
+      {
+        "fromNode": "sfc",
+        "toNode": "analytics"
+      },
+      {
+        "fromNode": "sfc",
+        "toNode": "analytics-ephemeral"
+      },
+      {
+        "fromNode": "sfc",
+        "toNode": "matt"
+      },
+      {
+        "fromNode": "sfc",
+        "toNode": "signalboost"
+      },
+      {
+        "fromNode": "sfc",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "sfpackage",
+        "toNode": "cassandra"
+      },
+      {
+        "fromNode": "sfpackage",
+        "toNode": "cassandra:signalflow_packages"
+      },
+      {
+        "fromNode": "sfpackage",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "signalboost",
+        "toNode": "analytics"
+      },
+      {
+        "fromNode": "signalboost",
+        "toNode": "analytics-ephemeral"
+      },
+      {
+        "fromNode": "signalboost",
+        "toNode": "auth"
+      },
+      {
+        "fromNode": "signalboost",
+        "toNode": "matt"
+      },
+      {
+        "fromNode": "signalboost",
+        "toNode": "percolator"
+      },
+      {
+        "fromNode": "signalboost",
+        "toNode": "sfpackage"
+      },
+      {
+        "fromNode": "signalboost",
+        "toNode": "signalboost.o11y-imm"
+      },
+      {
+        "fromNode": "signalboost",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "signalboost-backfill",
+        "toNode": "cassandra"
+      },
+      {
+        "fromNode": "signalboost-backfill",
+        "toNode": "postgresql:appsdb"
+      },
+      {
+        "fromNode": "signalboost-backfill",
+        "toNode": "postgresql:detectorsdb"
+      },
+      {
+        "fromNode": "signalboost-backfill",
+        "toNode": "postgresql:vizdb"
+      },
+      {
+        "fromNode": "signalboost-experimental",
+        "toNode": "cassandra"
+      },
+      {
+        "fromNode": "signalboost-experimental",
+        "toNode": "postgresql:appsdb"
+      },
+      {
+        "fromNode": "signalboost-experimental",
+        "toNode": "postgresql:detectorsdb"
+      },
+      {
+        "fromNode": "signalboost-experimental",
+        "toNode": "postgresql:vizdb"
+      },
+      {
+        "fromNode": "signalboost-ingest.o11y-ingest",
+        "toNode": "sbingest"
+      },
+      {
+        "fromNode": "signalboost-rest",
+        "toNode": "apm-graphql"
+      },
+      {
+        "fromNode": "signalboost-rest",
+        "toNode": "cassandra"
+      },
+      {
+        "fromNode": "signalboost-rest",
+        "toNode": "logs-graphql.o11y-logs"
+      },
+      {
+        "fromNode": "signalboost-rest",
+        "toNode": "memcached"
+      },
+      {
+        "fromNode": "signalboost-rest",
+        "toNode": "postgresql:appsdb"
+      },
+      {
+        "fromNode": "signalboost-rest",
+        "toNode": "postgresql:detectorsdb"
+      },
+      {
+        "fromNode": "signalboost-rest",
+        "toNode": "postgresql:navigatorsdb"
+      },
+      {
+        "fromNode": "signalboost-rest",
+        "toNode": "postgresql:vizdb"
+      },
+      {
+        "fromNode": "signalboost-rest",
+        "toNode": "preview-server.lab1"
+      },
+      {
+        "fromNode": "signalboost-rest",
+        "toNode": "rum-graphql"
+      },
+      {
+        "fromNode": "signalboost-rest",
+        "toNode": "signalboost.lab1"
+      },
+      {
+        "fromNode": "signalboost.lab1",
+        "toNode": "signalboost"
+      },
+      {
+        "fromNode": "signalboost.lab1",
+        "toNode": "signalboost-rest"
+      },
+      {
+        "fromNode": "signalboost.o11y-imm",
+        "toNode": "ai-assistant.o11y-ai"
+      },
+      {
+        "fromNode": "signalboost.o11y-imm",
+        "toNode": "domain-api-server.o11y-imm"
+      },
+      {
+        "fromNode": "signalboost.o11y-imm",
+        "toNode": "graphql.o11y-apm"
+      },
+      {
+        "fromNode": "signalboost.o11y-imm",
+        "toNode": "graphql.o11y-rum"
+      },
+      {
+        "fromNode": "signalboost.o11y-imm",
+        "toNode": "inventory-store.o11y-imm"
+      },
+      {
+        "fromNode": "signalboost.o11y-imm",
+        "toNode": "logs-graphql.o11y-logs"
+      },
+      {
+        "fromNode": "signalboost.o11y-imm",
+        "toNode": "metrics-processor.o11y-imm"
+      },
+      {
+        "fromNode": "signalboost.o11y-imm",
+        "toNode": "metrics-usage-server.o11y-imm"
+      },
+      {
+        "fromNode": "signalboost.o11y-imm",
+        "toNode": "profiling-api.o11y-profiling"
+      },
+      {
+        "fromNode": "signalboost.o11y-imm",
+        "toNode": "signalboost"
+      },
+      {
+        "fromNode": "signalboost.o11y-imm",
+        "toNode": "synthetics-api.o11y-synthetics"
+      },
+      {
+        "fromNode": "snowflake",
+        "toNode": "snowflake"
+      },
+      {
+        "fromNode": "unknown_service:java",
+        "toNode": "Glue"
+      },
+      {
+        "fromNode": "unknown_service:java",
+        "toNode": "Sts"
+      },
+      {
+        "fromNode": "unknown_service:java",
+        "toNode": "dynamodb"
+      },
+      {
+        "fromNode": "unknown_service:java",
+        "toNode": "metrics-processor"
+      },
+      {
+        "fromNode": "unknown_service:java",
+        "toNode": "metrics.proto.processor.ConfigManager"
+      },
+      {
+        "fromNode": "unknown_service:java",
+        "toNode": "other_sql:trino://presto-coordinator-blue.o11y-imm:8081"
+      },
+      {
+        "fromNode": "unknown_service:java",
+        "toNode": "postgresql:hydradb"
+      },
+      {
+        "fromNode": "unknown_service:java",
+        "toNode": "s3:accounting-data-lab0--signalfx-com"
+      },
+      {
+        "fromNode": "vnode-clock",
+        "toNode": "cassandra"
+      },
+      {
+        "fromNode": "vnode-clock",
+        "toNode": "signalboost"
+      },
+      {
+        "fromNode": "vnode-clock",
+        "toNode": "snowflake"
+      }
+    ]
+  }
+}
