@@ -7,6 +7,10 @@ Set `SIGNALFX_API_TOKEN` variable in your IntelliJ run configuration under env v
 ```
 GET http://localhost:8080/splunk/trace/{{traceId}}}/exitspan
 GET http://localhost:8080/splunk/trace/local/exitspan
+
+GET http://localhost:8080/splunk/metrics/{serviceName}
+GET http://localhost:8080/splunk/topology
+
 ```
 
 ```yaml
