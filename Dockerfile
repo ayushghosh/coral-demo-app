@@ -1,23 +1,16 @@
-# Stage 1: Build the application
-FROM gradle:7.4.2-jdk17 AS build
-WORKDIR /app
-COPY . /app
-RUN gradle clean build
-
-# Stage 2: Run the application
 FROM openjdk:17-jdk-slim
-#FROM docker.repo.splunkdev.net/observability/signalfx-base/alp-3.16-corretto21:1.11.49
+COPY . /app
 
 WORKDIR /app
+RUN ./gradlew clean build
 
 # Environment variable to choose the agent: 'splunk' or 'appdynamics'
 # ENV AGENT_TYPE=splunk
 
 # Download the Splunk OTEL agent
-ADD https://github.com/signalfx/splunk-otel-java/releases/latest/download/splunk-otel-javaagent.jar /app/splunk-otel-javaagent.jar
+ADD https://github.com/signalfx/splunk-otel-java/releases/latest/download/splunk-otel-javaagent.jar splunk-otel-javaagent.jar
 
-# Copy the built application JAR from the build stage
-COPY --from=build /app/build/libs/*.jar /app/myapp.jar
+COPY build/libs/coral-demo-app-0.1-all.jar myapp.jar
 
 # Expose the port the application runs on (example: 8080)
 EXPOSE 8080
