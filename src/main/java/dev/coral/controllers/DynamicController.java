@@ -1,11 +1,17 @@
 package dev.coral.controllers;
 
+import java.io.IOException;
+import java.util.Locale;
+import java.util.concurrent.ThreadLocalRandom;
+
+
 import dev.coral.config.EndpointConfig;
 import dev.coral.model.SplunkAlert;
 import dev.coral.model.SplunkMTS;
 import dev.coral.model.SplunkTopology;
 import dev.coral.service.Span;
 import dev.coral.service.SplunkO11yDataFetcherService;
+import dev.coral.utils.metrics.LocalFileWriter;
 import io.micronaut.http.annotation.Body;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
@@ -16,19 +22,12 @@ import io.micronaut.http.client.annotation.Client;
 import io.micronaut.scheduling.TaskExecutors;
 import io.micronaut.scheduling.annotation.ExecuteOn;
 import jakarta.inject.Inject;
-import java.io.IOException;
 import lombok.extern.slf4j.Slf4j;
-import org.w3c.dom.Node;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.ThreadLocalRandom;
 
 @Slf4j
 @Controller
 @ExecuteOn(TaskExecutors.BLOCKING)
 public class DynamicController {
-
     private final EndpointConfig endpointConfig;
     private final HttpClient httpClient;
     private final SplunkO11yDataFetcherService splunkO11yDataFetcherService;
@@ -57,6 +56,7 @@ public class DynamicController {
     @Post("/splunk/alert/webhook")
     public void postAlertData(@Body SplunkAlert body) throws IOException {
         log.info("Splunk alert data: {}", body);
+        LocalFileWriter.save(body.getDetector().trim() + "-" + body.getDetectorId() , body);
     }
 
 
@@ -72,6 +72,7 @@ public class DynamicController {
     public SplunkTopology getSplunkTopology() {
         SplunkTopology resp = splunkO11yDataFetcherService.getTopology();
         log.info("Topology data {}", resp);
+        LocalFileWriter.save("topology", resp);
         return resp;
     }
 
@@ -79,7 +80,8 @@ public class DynamicController {
     public String getSplunkTimeSeriesWindow(@PathVariable("serviceName") String serviceName, @PathVariable("metricName") String metricName) {
         log.info("Received request to fetch Time Series for serviceName: {} and metric: {}", serviceName, metricName);
         String resp = splunkO11yDataFetcherService.getTimeSeriesWindow(serviceName, metricName);
-        log.info("Serialized MTS: {} ", resp);
+        LocalFileWriter.save(serviceName + "-" + metricName, resp);
+        log.info("Serialized MTS for service {} & metric name {} -- {} ",serviceName, metricName, resp);
         return resp;
     }
 

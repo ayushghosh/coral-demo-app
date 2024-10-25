@@ -1,5 +1,8 @@
 Demo App
 
+### JSON Files
+Output of certain endpoints will be stored under `/**${user.home}**/.coral/*.json`
+
 ### Access Tokens
 Set `SIGNALFX_API_TOKEN` variable in your IntelliJ run configuration under env variables
 
