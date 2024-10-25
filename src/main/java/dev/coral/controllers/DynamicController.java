@@ -1,12 +1,16 @@
 package dev.coral.controllers;
 
 import dev.coral.config.EndpointConfig;
+import dev.coral.model.SplunkAlert;
 import dev.coral.model.SplunkMTS;
 import dev.coral.model.SplunkTopology;
+import dev.coral.service.Span;
 import dev.coral.service.SplunkO11yDataFetcherService;
+import io.micronaut.http.annotation.Body;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.PathVariable;
+import io.micronaut.http.annotation.Post;
 import io.micronaut.http.client.HttpClient;
 import io.micronaut.http.client.annotation.Client;
 import io.micronaut.scheduling.TaskExecutors;
@@ -34,15 +38,23 @@ public class DynamicController {
     }
 
     @Get("/splunk/trace/{traceId}/exitspan")
-    public void getSplunkTrace(String traceId) {
-        System.out.println("Received request to fetch traceID: " + traceId);
-        System.out.println("Received Trace for service: " + splunkO11yDataFetcherService.getExistSpanFromTraceAPI(traceId));
+    public Span getSplunkTrace(String traceId) {
+        log.info("Received request to fetch traceID: {}", traceId);
+        Span resp = splunkO11yDataFetcherService.getExistSpanFromTraceAPI(traceId);
+        log.info("Received exit span for Trace id {} - {}", traceId, resp);
+        return resp;
     }
 
     @Get("/splunk/trace/local/exitspan")
-    public void getSplunkTraceFromLocal() throws IOException {
-        System.out.println("Received Trace for service: " + splunkO11yDataFetcherService.getExistSpanFromLocalTrace());
+    public Span getSplunkTraceFromLocal() throws IOException {
+        return splunkO11yDataFetcherService.getExistSpanFromLocalTrace();
     }
+
+    @Post("/splunk/alert/webhook")
+    public void postAlertData(@Body SplunkAlert body) throws IOException {
+        log.info("Splunk alert data: {}", body);
+    }
+
 
     @Get("/splunk/metrics/{serviceName}")
     public SplunkMTS getSplunkMTS(@PathVariable("serviceName") String serviceName) {
