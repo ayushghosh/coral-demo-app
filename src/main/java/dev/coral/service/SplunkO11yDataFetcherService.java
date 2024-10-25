@@ -1,16 +1,23 @@
 package dev.coral.service;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import dev.coral.client.splunk.SplunkO11yHttpClient;
-import dev.coral.utils.metrics.MTSQueryGenerator;
-import jakarta.inject.Inject;
-import jakarta.inject.Singleton;
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+
+import dev.coral.client.splunk.SplunkO11yHttpClient;
+import dev.coral.model.SplunkMTS;
+import dev.coral.model.SplunkTopology;
+import dev.coral.utils.metrics.MTSQueryGenerator;
+import jakarta.inject.Inject;
+import jakarta.inject.Singleton;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @Singleton
 public class SplunkO11yDataFetcherService {
 
@@ -43,8 +50,15 @@ public class SplunkO11yDataFetcherService {
         return trace.stream().max(Comparator.comparing(Span::getStartTime)).get();
     }
 
-    public String getMTS(String serviceName) {
-        String query = MTSQueryGenerator.generateQueryForService("signalboost");
-        return splunkO11yHttpClient.getMts(SFX_TOKEN, query);
+    public SplunkMTS getMTS(String serviceName) {
+        String query = MTSQueryGenerator.generateQueryForService(serviceName);
+        log.info("Query: {}", query);
+        SplunkMTS resp = splunkO11yHttpClient.getMts(SFX_TOKEN, query, 1);
+        return splunkO11yHttpClient.getMts(SFX_TOKEN, query, resp.getCount());
+    }
+
+    public SplunkTopology getTopology() {
+        String body = String.format("{ \"timeRange\": \"%s\"}", MTSQueryGenerator.generateTimeRange(5));
+        return splunkO11yHttpClient.getSplunkTopology(SFX_TOKEN, body);
     }
 }

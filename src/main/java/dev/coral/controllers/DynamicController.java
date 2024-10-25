@@ -1,6 +1,8 @@
 package dev.coral.controllers;
 
 import dev.coral.config.EndpointConfig;
+import dev.coral.model.SplunkMTS;
+import dev.coral.model.SplunkTopology;
 import dev.coral.service.SplunkO11yDataFetcherService;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
@@ -43,9 +45,18 @@ public class DynamicController {
     }
 
     @Get("/splunk/metrics/{serviceName}")
-    public void getSplunkMTS(@PathVariable("serviceName") String serviceName) {
+    public SplunkMTS getSplunkMTS(@PathVariable("serviceName") String serviceName) {
         log.info("Received request to fetch mts for serviceName: {}", serviceName);
-        log.info("Serialized MTS: {} ", splunkO11yDataFetcherService.getMTS(serviceName));
+        SplunkMTS resp = splunkO11yDataFetcherService.getMTS(serviceName);
+        log.info("Serialized MTS: {} ", resp);
+        return resp;
+    }
+
+    @Get("/splunk/topology")
+    public SplunkTopology getSplunkTopology() {
+        SplunkTopology resp = splunkO11yDataFetcherService.getTopology();
+        log.info("Topology data {}", resp);
+        return resp;
     }
 
     @Get("/{dynamicEndpoint}")
