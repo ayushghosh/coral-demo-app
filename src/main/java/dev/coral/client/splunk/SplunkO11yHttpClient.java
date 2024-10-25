@@ -31,4 +31,7 @@ public interface SplunkO11yHttpClient {
 
     @Post(value = "/v2/apm/topology")
     SplunkTopology getSplunkTopology(@Header("X-SF-Token") String sfxToken, @Body String body);
+
+    @Get(value = "/v1/timeserieswindow")
+    String getTimeSeriesWindow(@Header("X-SF-Token") String sfxToken, @QueryValue("query") String query, @QueryValue("startMS") long startMS, @QueryValue("endMS") long endMS, @QueryValue("resolution") long resolution);
 }

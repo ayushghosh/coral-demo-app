@@ -30,7 +30,7 @@ public class MTSQueryGenerator {
             .withZone(ZoneOffset.UTC);
 
         String to = formatter.format(Instant.ofEpochMilli(currentTime));
-        String from = formatter.format(Instant.ofEpochMilli(currentTime - (minutesInPast * 60000)));
+        String from = formatter.format(Instant.ofEpochMilli(currentTime - (minutesInPast * 60 * 1000)));
 
         return String.format("%s/%s", from, to);
     }

@@ -18,6 +18,10 @@ import io.micronaut.scheduling.annotation.ExecuteOn;
 import jakarta.inject.Inject;
 import java.io.IOException;
 import lombok.extern.slf4j.Slf4j;
+import org.w3c.dom.Node;
+
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
 @Slf4j
@@ -69,6 +73,24 @@ public class DynamicController {
         SplunkTopology resp = splunkO11yDataFetcherService.getTopology();
         log.info("Topology data {}", resp);
         return resp;
+    }
+
+    @Get("/splunk/metrics/timeseries/{serviceName}/{metricName}")
+    public String getSplunkTimeSeriesWindow(@PathVariable("serviceName") String serviceName, @PathVariable("metricName") String metricName) {
+        log.info("Received request to fetch Time Series for serviceName: {} and metric: {}", serviceName, metricName);
+        String resp = splunkO11yDataFetcherService.getTimeSeriesWindow(serviceName, metricName);
+        log.info("Serialized MTS: {} ", resp);
+        return resp;
+    }
+
+    @Get("/splunk/allMTS")
+    public String getAllMTS() {
+        return splunkO11yDataFetcherService.getAllMTS();
+    }
+
+    @Get("/splunk/allTimeSeries")
+    public String getAllTimeSeries() {
+        return splunkO11yDataFetcherService.getAllTimeSeries();
     }
 
     @Get("/{dynamicEndpoint}")
