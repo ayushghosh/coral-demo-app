@@ -20,9 +20,13 @@ ENV SERVICE_PORT=8080
 EXPOSE $SERVICE_PORT
 
 # Conditional entrypoint script based on the AGENT_TYPE environment variable
-ENTRYPOINT ["/bin/sh", "-c", "\
+ENTRYPOINT ["/bin/sh", "-c", " \
   if [ \"$AGENT_TYPE\" = 'splunk' ]; then \
-    java -javaagent:/app/splunk-otel-javaagent.jar -jar /app/myapp.jar; \
+    java -javaagent:/app/splunk-otel-javaagent.jar \
+    -Dsplunk.profiler.enabled=true \
+    -Dsplunk.profiler.memory.enabled=true \
+    -Dexporters.profiling.log_data_enabled=false \
+    -jar /app/myapp.jar; \
   elif [ \"$AGENT_TYPE\" = 'appdynamics' ]; then \
     java -javaagent:/app/appd-javaagent/javaagent.jar -jar /app/myapp.jar; \
   else \

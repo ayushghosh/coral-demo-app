@@ -1,0 +1,61 @@
+services:
+  main-app:
+    image: coral-demo-app
+    ports:
+      - "8080:8080"
+    environment:
+      - SIGNALFX_API_TOKEN=KyssNC-WFXmoB82mwYW1jw
+      - SPLUNK_ACCESS_TOKEN=KyssNC-WFXmoB82mwYW1jw
+      - SPLUNK_REALM=us1
+      - AGENT_TYPE=splunk
+      - OTEL_SERVICE_NAME=coral-main-app
+      - SERVICE_NAME=orders-service
+      - SERVICE_HOST_ADDRESS=10.0.4.40
+      - OTEL_RESOURCE_ATTRIBUTES=deployment.environment=dev,service.version=1.0
+      - OTEL_EXPORTER_OTLP_ENDPOINT=https://ingest.us1.signalfx.com/v2/trace
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=https://ingest.us1.signalfx.com/v2/trace/otlp
+    container_name: coral-main-app
+
+  orders-service:
+    image: coral-demo-app
+    ports:
+      - "8081:8080"
+    environment:
+      - SIGNALFX_API_TOKEN=KyssNC-WFXmoB82mwYW1jw
+      - SPLUNK_ACCESS_TOKEN=KyssNC-WFXmoB82mwYW1jw
+      - SPLUNK_REALM=us1
+      - AGENT_TYPE=splunk
+      - OTEL_SERVICE_NAME=orders-service
+      - SERVICE_NAME=orders-service
+      - SERVICE_HOST_ADDRESS=10.0.4.40
+      - OTEL_RESOURCE_ATTRIBUTES=deployment.environment=dev,service.version=1.0
+      - OTEL_EXPORTER_OTLP_ENDPOINT=https://ingest.us1.signalfx.com/v2/trace
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=https://ingest.us1.signalfx.com/v2/trace/otlp
+    container_name: orders-service
+
+  checkout-service:
+    image: coral-demo-app
+    ports:
+      - "8082:8080"
+    environment:
+      - SIGNALFX_API_TOKEN=KyssNC-WFXmoB82mwYW1jw
+      - SPLUNK_ACCESS_TOKEN=KyssNC-WFXmoB82mwYW1jw
+      - SPLUNK_REALM=us1
+      - AGENT_TYPE=splunk
+      - OTEL_SERVICE_NAME=checkout-service
+      - SERVICE_NAME=checkout-service
+      - SERVICE_HOST_ADDRESS=10.0.4.40
+      - OTEL_RESOURCE_ATTRIBUTES=deployment.environment=dev,service.version=1.0
+      - OTEL_EXPORTER_OTLP_ENDPOINT=https://ingest.us1.signalfx.com/v2/trace
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=https://ingest.us1.signalfx.com/v2/trace/otlp
+
+  payment-service:
+    image: coral-demo-app
+    ports:
+      - "8083:8080"
+    environment:
+      - AGENT_TYPE=appdynamics
+      - SERVICE_NAME=payment-service
+      - SERVICE_HOST_ADDRESS=10.0.4.40
+
+

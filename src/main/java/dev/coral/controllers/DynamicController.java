@@ -53,11 +53,13 @@ public class DynamicController {
     }
 
     @Get("/checkout")
-    public void serveCheckout() {
+    public String serveCheckout() {
+        return "check-complete";
     }
 
     @Get("/payments")
-    public void servePayments() {
+    public String servePayments() {
+        return "payments-processed";
     }
 
     @Get("/splunk/trace/{traceId}/exitspan")

@@ -24,10 +24,10 @@ coral:
     - name: health
       url: myhealth
       actions:
-        - "request|http://localhost:8080/health"
+        - "request|http://localhost:8080/dynamic/health"
         - "wait_random|1000"
     - name: info
       url: myinfo
       actions:
-        - "request|http://localhost:8080/health"
+        - "request|http://localhost:8080/dynamic/health"
         - "wait_random|1000"
