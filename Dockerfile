@@ -13,7 +13,8 @@ ADD https://github.com/signalfx/splunk-otel-java/releases/latest/download/splunk
 COPY build/libs/coral-demo-app-0.1-all.jar myapp.jar
 
 # Expose the port the application runs on (example: 8080)
-ENV SERVICE_NAME=coral-demo-app
+ENV SERVICE_NAME=coral-docker-app
+ENV SERVICE_HOST_ADDRESS=localhost
 ENV SERVICE_PORT=8080
 
 EXPOSE $SERVICE_PORT

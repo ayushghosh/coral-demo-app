@@ -22,10 +22,21 @@ public class DemoServiceController {
 
     @Get("/orders")
     public StringBuilder getSplunkMTS() {
+        String serviceHostAddress = System.getenv("SERVICE_HOST_ADDRESS");
         log.info("Received order request, calling payment service and checkout service");
         StringBuilder responseBuilder = new StringBuilder();
-        responseBuilder.append(httpClient.toBlocking().retrieve("http://localhost:8082/payments"));
-        responseBuilder.append(httpClient.toBlocking().retrieve("http://localhost:8083/checkout"));
+        // service in splunk
+        responseBuilder.append(httpClient.toBlocking().retrieve("http://" + serviceHostAddress + ":8082/checkout"));
+        // service in appD
+        responseBuilder.append(httpClient.toBlocking().retrieve("http://" + serviceHostAddress + ":8083/payments"));
         return responseBuilder;
+    }
+
+    @Get("/checkout")
+    public void serveCheckout() {
+    }
+
+    @Get("/payments")
+    public void servePayments() {
     }
 }
