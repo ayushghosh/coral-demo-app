@@ -165,7 +165,7 @@ if __name__ == "__main__":
     # Example usage:
     # Run the script from the command line with the following arguments:
     # conda activate py-causal
-    # python causal_analyzer.py dummy_data/rca_microservice_architecture_latencies.csv dummy_data/rca_microservice_architecture_anomaly_1000.csv dummy_data/causal_graph.json dummy_data/target_node.txt
+    # python causal_analyzer.py simulated_singlemetric_data/rca_microservice_architecture_latencies.csv simulated_singlemetric_data/rca_microservice_architecture_anomaly_1000.csv simulated_singlemetric_data/causal_graph.json simulated_singlemetric_data/target_node.txt
 
     # You can also add optional arguments:
     # --sample_frac 0.3
@@ -175,5 +175,5 @@ if __name__ == "__main__":
     # --output_json my_attributions.json
 
     # Full example with optional arguments:
-    # python causal_analyzer.py dummy_data/rca_microservice_architecture_latencies.csv dummy_data/rca_microservice_architecture_anomaly_1000.csv dummy_data/causal_graph.json dummy_data/target_node.txt --sample_frac 0.3 --num_bootstrap_resamples 5 --discover_distributions --output_plot my_attribution_plot.png --output_json my_attributions.json
+    # python causal_analyzer.py simulated_singlemetric_data/rca_microservice_architecture_latencies.csv simulated_singlemetric_data/rca_microservice_architecture_anomaly_1000.csv simulated_singlemetric_data/causal_graph.json simulated_singlemetric_data/target_node.txt --sample_frac 0.3 --num_bootstrap_resamples 5 --discover_distributions --output_plot my_attribution_plot.png --output_json my_attributions.json
 
