@@ -40,6 +40,26 @@ public class DynamicController {
         this.splunkO11yDataFetcherService = splunkO11yDataFetcherService;
     }
 
+    @Get("/orders")
+    public StringBuilder getSplunkMTS() {
+        String serviceHostAddress = System.getenv("SERVICE_HOST_ADDRESS");
+        log.info("Received order request, calling payment service and checkout service");
+        StringBuilder responseBuilder = new StringBuilder();
+        // service in splunk
+        responseBuilder.append(httpClient.toBlocking().retrieve("http://" + serviceHostAddress + ":8082/checkout"));
+        // service in appD
+        responseBuilder.append(httpClient.toBlocking().retrieve("http://" + serviceHostAddress + ":8083/payments"));
+        return responseBuilder;
+    }
+
+    @Get("/checkout")
+    public void serveCheckout() {
+    }
+
+    @Get("/payments")
+    public void servePayments() {
+    }
+
     @Get("/splunk/trace/{traceId}/exitspan")
     public Span getSplunkTrace(String traceId) {
         log.info("Received request to fetch traceID: {}", traceId);
