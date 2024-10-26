@@ -1,0 +1,1 @@
+{"nodes":[{"serviceName":"coral-main-app","inferred":false,"type":"service"},{"serviceName":"checkout-service","inferred":false,"type":"service"},{"serviceName":"orders-service","inferred":false,"type":"service"}],"edges":[{"fromNode":"orders-service","toNode":"checkout-service"}]}

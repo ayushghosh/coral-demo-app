@@ -1,6 +1,7 @@
 package dev.coral.controllers;
 
 import java.io.IOException;
+import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
 
@@ -112,6 +113,33 @@ public class DynamicController {
     @Get("/splunk/allTimeSeries")
     public String getAllTimeSeries() {
         return splunkO11yDataFetcherService.getAllTimeSeries();
+    }
+
+    @Get("/splunk/loadAllSplunkData")
+    public Map<String, Map<String, String>> loadAllSplunkData() {
+        return splunkO11yDataFetcherService.fetchAllSplunkData();
+    }
+
+    @Get("/splunk/fetchCoralData/{serviceName}")
+    public String fetchCoralData(@PathVariable("serviceName") String serviceName) {
+        return splunkO11yDataFetcherService.fetchCoralData(serviceName);
+    }
+
+
+    @Get("/splunk/trace/exitSpan/{serviceName}")
+    public Span getExitSpanForService(String serviceName) {
+        log.info("Received request to fetch exit span for service: {}", serviceName);
+        Span resp = splunkO11yDataFetcherService.getExitSpanForService(serviceName);
+        log.info("Received exit span for Service {} - {}", serviceName, resp);
+        return resp;
+    }
+
+    @Get("/splunk/trace/{serviceName}")
+    public String getTraceIdForService(String serviceName) {
+        log.info("Received request to fetch trace for service: {}", serviceName);
+        String resp = splunkO11yDataFetcherService.getTraceId(serviceName);
+        log.info("Received trace ID for Service {} - {}", serviceName, resp);
+        return resp;
     }
 
     @Get("/dynamic/{dynamicEndpoint}")

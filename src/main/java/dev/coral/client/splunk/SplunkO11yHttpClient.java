@@ -17,7 +17,7 @@ import io.micronaut.http.annotation.Post;
 import io.micronaut.http.annotation.QueryValue;
 import io.micronaut.http.client.annotation.Client;
 
-@Client("https://api.rc0.signalfx.com") // Base URL
+@Client("https://api.us1.signalfx.com") // Base URL
 public interface SplunkO11yHttpClient {
 
     @Get(value = "/v2/apm/trace/{traceId}/latest")
@@ -25,6 +25,12 @@ public interface SplunkO11yHttpClient {
         @Header(name = ACCEPT, value = "application/json")
     )
     List<Span> getTraceById(@Header("X-SF-Token") String sfxToken, @PathVariable String traceId);
+
+    @Post(value = "v2/apm/graphql")
+    @Headers(
+            @Header(name = ACCEPT, value = "application/json")
+    )
+    String getTraceByService(@Header("X-SF-Token") String sfxToken, @QueryValue("op") String op, @Body String body);
 
     @Get(value = "/v2/metrictimeseries/")
     SplunkMTS getMts(@Header("X-SF-Token") String sfxToken, @QueryValue("query") String query, @QueryValue("limit") long limit);
