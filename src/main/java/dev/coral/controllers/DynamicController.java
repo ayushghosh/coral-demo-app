@@ -1,7 +1,6 @@
 package dev.coral.controllers;
 
 import java.io.IOException;
-import java.util.Locale;
 import java.util.concurrent.ThreadLocalRandom;
 
 
@@ -115,7 +114,7 @@ public class DynamicController {
         return splunkO11yDataFetcherService.getAllTimeSeries();
     }
 
-    @Get("/{dynamicEndpoint}")
+    @Get("/dynamic/{dynamicEndpoint}")
     public String handleRequest(String dynamicEndpoint) {
         log.info("===================================");
         log.info("Dynamic request: {}", dynamicEndpoint);
