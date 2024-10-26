@@ -9,8 +9,10 @@ from typing import Dict, List, Tuple
 from sklearn.covariance import EllipticEnvelope
 from sklearn.ensemble import IsolationForest
 from typing import Dict, Tuple
+import os
 
 from causal_analyzer import CausalImpactAnalyzer
+import matplotlib
 
 #### HELPERS - ANOMALY DETECTION ####
 class AnomalyAggregator: 
@@ -129,7 +131,8 @@ def analyze_with_aggregated_anomaly_scores(causal_graph,
                                            normal_data, 
                                            anomalous_data, 
                                            target_node, 
-                                           display_results = False):
+                                           display_results = False, 
+                                           plotting_dir = './outputs/'):
     def compute_percent_contrib(median_attribs):
         attribs_df = pd.DataFrame(median_attribs).abs()
         total_attribs_value = attribs_df['median_attribs'].sum()
@@ -159,7 +162,7 @@ def analyze_with_aggregated_anomaly_scores(causal_graph,
 
     # Plot the attributions
     if display_results:
-        _ = analyzer.plot_attributions(median_attribs, uncertainty_attribs)
+        _ = analyzer.plot_attributions(median_attribs, uncertainty_attribs, filepath=plotting_dir + 'aggregated_attributions.png')
     return {'median_attribs':median_attribs, 'uncertainty_attribs':uncertainty_attribs}
 
 ### ALTERNATIVE 2: RUN ANALYSIS PER METRIC THEN AGGREGATE ATTRIBUTIONS 
@@ -168,7 +171,8 @@ def analyze_per_metric(causal_graph,
                        anomalous_data, 
                        target_node, 
                        contribution_perc_floor = 20, 
-                       display_results = False):
+                       display_results = False,
+                       plotting_dir = './outputs/'):
     def compute_percent_contrib(results, metric):
         attribs_df = pd.DataFrame(results[metric])[['median_attribs']].abs()
         total_attribs_value = attribs_df['median_attribs'].sum()
@@ -219,13 +223,13 @@ def analyze_per_metric(causal_graph,
     for metric in anomalous_metrics:
         if display_results:
             print(f"Plotting attributions for {metric}")
-            _ = analyzer.plot_attributions(results[metric]['median_attribs'], results[metric]['uncertainty_attribs'])
+            _ = analyzer.plot_attributions(results[metric]['median_attribs'], results[metric]['uncertainty_attribs'], filepath=plotting_dir + f'{metric}_attributions.png')
         contributions = compute_percent_contrib(results, metric)
         significant_contributions = contributions[contributions['percent_contrib'] > contribution_perc_floor].to_dict()
         results[metric].update(significant_contributions)
         if display_results:
             print(f"Percent contributions for {metric}: {significant_contributions}")
-
+        
     return {'per_metric_attributions':results}
 
 
@@ -247,7 +251,8 @@ def main():
                         help='Type of analysis to perform: aggregated or per_metric')
     parser.add_argument('--output_json', type=str, default='attributions.json',
                         help='Path to save the attributions as JSON (default: attributions.json)')
-
+    parser.add_argument('--plotting_dir', type=str, default='./plots/',
+                        help='Directory to save the plotting outputs (default: ./plots/)')
     args = parser.parse_args()
 
     # Load data
@@ -258,11 +263,15 @@ def main():
     with open(args.target_node_path, 'r') as f:
         target_node = f.read().strip()
 
+    # check if plotting dir exists, if not create it
+    if not os.path.exists(args.plotting_dir):
+        os.makedirs(args.plotting_dir)
+
     # Perform analysis
     if args.analysis_type == 'a1':
-        results = analyze_with_aggregated_anomaly_scores(causal_graph, normal_data, outlier_data, target_node)
+        results = analyze_with_aggregated_anomaly_scores(causal_graph, normal_data, outlier_data, target_node, display_results=True, plotting_dir=args.plotting_dir)
     elif args.analysis_type == 'a4':
-        results = analyze_per_metric(causal_graph, normal_data, outlier_data, target_node)
+        results = analyze_per_metric(causal_graph, normal_data, outlier_data, target_node, display_results=True, plotting_dir=args.plotting_dir)
 
     # Save results to JSON
     with open(args.output_json, 'w') as f:
@@ -270,7 +279,11 @@ def main():
     print(f"Results saved to {args.output_json}")
 
 if __name__ == "__main__":
+    matplotlib.use('Agg')  # Set the backend to Agg
+    import matplotlib.pyplot as plt
+    plt.ioff()  # Turn off interactive mode
     main()
+
     # Example usage:
     # Run the script from the command line with the following arguments:
     # conda activate py-causal

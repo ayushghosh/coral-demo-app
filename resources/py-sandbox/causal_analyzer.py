@@ -10,6 +10,8 @@ import base64
 import seaborn as sns
 import json
 import argparse
+import matplotlib
+import matplotlib.pyplot as plt
 
 class CausalImpactAnalyzer:
     def __init__(self, 
@@ -161,6 +163,9 @@ def main():
     print(f"Attributions and uncertainty saved to {args.output_json}")
 
 if __name__ == "__main__":
+    import matplotlib.pyplot as plt
+    matplotlib.use('Agg')  # Set the backend to Agg
+    plt.ioff()  # Turn off interactive mode
     main()
     # Example usage:
     # Run the script from the command line with the following arguments:
